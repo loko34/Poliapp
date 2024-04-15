@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/home"
+            android:title="Inicio" />
+    </group>
+
+    <group
+        android:id="@+id/third_section"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/photos"
+            android:title="Fotos" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Videos" />
+        <item
+            android:id="@+id/nav_web"
+            android:icon="@drawable/web"
+            android:title="Web" />
+        <item
+            android:id="@+id/nav_buttons"
+            android:icon="@drawable/buttons"
+            android:title="Botones" />
+    </group>
+    <group android:divider="@drawable/divider_horizontal_light" />
+</menu>

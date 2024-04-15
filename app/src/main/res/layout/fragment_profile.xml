@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:background="#3F69FF">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corners"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textViewName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textViewOccupation"
+            app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+            app:layout_constraintStart_toStartOf="@+id/imageProfile"
+            app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
+
+        <TextView
+            android:id="@+id/textViewOccupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewName"
+            app:layout_constraintStart_toStartOf="@+id/textViewName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+        <!-- Botón de carga con icono -->
+        <ImageButton
+            android:id="@+id/btnUploadImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#D3D3D3"
+            android:src="@drawable/upload"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corners"
+            app:layout_constraintBottom_toBottomOf="@+id/imageProfile"
+            app:layout_constraintEnd_toEndOf="@+id/imageProfile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Formulario con botón debajo del cuadro azul -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombres"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ocupación"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="text" />
+
+        <FrameLayout
+            android:id="@+id/btnUpdateProfileContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corners"
+                android:text="Actualizar" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

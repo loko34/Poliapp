@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Esta es la aplicación del poli(Si tienen algo mejor que poner aqui, bien pueda)"
+            android:textSize="30dp"
+            android:backgroundTint="#000000"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

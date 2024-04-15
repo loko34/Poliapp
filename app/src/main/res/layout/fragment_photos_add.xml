@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhotosAdd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/title_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Ingreso de imagen"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/NomImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la imagen"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/DescripcionImagen"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:inputType="text|textMultiLine"
+            android:hint="Descripción"
+            android:gravity="top"/>
+
+        <!-- Botón para subir imágenes -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/uploadPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:backgroundTint="#F2F3F2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/Imagen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="25dp"
+                    android:src="@drawable/upload" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subir imagen"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/btnUpdateProfileContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BotonGuardarImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:height="70dp"
+                android:background="@drawable/rounded_corners"
+                android:text="Guardar"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

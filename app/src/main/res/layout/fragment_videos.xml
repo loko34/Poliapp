@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Videos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Videos"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Cargar nuevo video"
+            android:textSize="15dp" />
+
+        <!-- Botón para subir videos -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/uploadVideo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:backgroundTint="#F2F3F2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload"
+                    android:padding="25dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subir imagen"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:height="60dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Guardar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <VideoView
+                    android:id="@+id/videoView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginBottom="20dp" />
+
+                <VideoView
+                    android:id="@+id/videoView2"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="170dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

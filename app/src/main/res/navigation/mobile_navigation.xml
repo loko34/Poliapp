@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.poliapp.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_phsotos"
+        android:name="com.example.poliapp.ui.gallery.GalleryFragment"
+        android:label="Fotos"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_viddeos"
+        android:name="com.example.poliapp.ui.slideshow.SlideshowFragment"
+        android:label="Videos"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_buttons"
+        android:name="com.example.poliapp.buttons"
+        android:label="Botones"
+        tools:layout="@layout/fragment_buttons" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.poliapp.Profile"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_web"
+        android:name="com.example.poliapp.web"
+        android:label="Web"
+        tools:layout="@layout/fragment_web" />
+    <fragment
+        android:id="@+id/nav_photos"
+        android:name="com.example.poliapp.Photos"
+        android:label="Fotos"
+        tools:layout="@layout/fragment_photos" />
+    <fragment
+        android:id="@+id/nav_videos"
+        android:name="com.example.poliapp.Videos"
+        android:label="Videos"
+        tools:layout="@layout/fragment_videos" />
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.poliapp.Inicio"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/nav_photosadd"
+        android:name="com.example.poliapp.PhotosAdd"
+        android:label="Agregar"
+        tools:layout="@layout/fragment_photos_add" />
+</navigation>
